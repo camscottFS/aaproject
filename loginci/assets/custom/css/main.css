@@ -1,0 +1,633 @@
+@font-face {
+  font-family: Overwatch;
+  src: url(../fonts/big_noodle_titling.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.otf);
+}
+
+body {
+  background: url("../images/background.png");
+  font-family: Overwatch !important;
+}
+
+.boxed {
+  background: #7c7c7c;
+  margin-top: 30px;
+  height: 100%;
+  padding: 10px 10px 25px 10px;
+  border: 1px solid #7c7c7c;
+  border-radius: 7px;
+}
+
+.clear {
+  clear: both;
+}
+
+span {
+  font-family: Overwatch;
+  color: #fff;
+  margin-right: 20px;
+}
+
+/* Header */
+
+.header {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  background: #151515;
+}
+
+.logo {
+  margin: 5px 50px 0px -15px;
+  float: left;
+  width: 200px;
+  height: 70px;
+  background: url("../images/logo.png");
+}
+
+/* Navigation */
+
+nav {
+  margin: 0 auto;
+  width: 60%;
+}
+
+nav ul {
+  padding: 25px 0px 0px 0px;
+}
+
+nav ul li {
+  padding: 5px 5px 5px 5px;
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s linear 0s;
+}
+
+nav ul li a:hover {
+  color: #ffae00;
+  text-decoration: none;
+}
+
+.user-nav {
+  margin-top: -40px;
+  float: right;
+  font-weight: bold;
+  color: #151515;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.create_post {
+  margin-right: 30px;
+  background: #ffae00;
+  border: 3px solid #ffae00;
+  border-radius: 3px;
+  text-transform: uppercase;
+  height: 35px;
+  color: #151515;
+  transition: background 0.3s linear 0s, border 0.3s linear 0s;
+}
+
+.create_post:hover {
+  background: #cc8c02;
+  border: 3px solid #cc8c02;
+}
+
+.login {
+  background: #ffae00;
+  border: 3px solid #ffae00;
+  border-radius: 3px;
+  text-transform: uppercase;
+  height: 35px;
+  color: #151515;
+  transition: background 0.3s linear 0s, border 0.3s linear 0s;
+}
+
+.login:hover {
+  background: #cc8c02;
+  border: 3px solid #cc8c02;
+}
+
+.register {
+  background: #ffae00;
+  border: 3px solid #ffae00;
+  border-radius: 3px;
+  text-transform: uppercase;
+  height: 35px;
+  color: #151515;
+  transition: background 0.3s linear 0s, border 0.3s linear 0s;
+}
+
+.register:hover {
+  background: #cc8c02;
+  border: 3px solid #cc8c02;
+}
+
+.message {
+  width: 100%;
+  resize: none;
+  height: 200px;
+  padding: 4px 4px 4px 4px;
+}
+
+/* End Header/Navigation */
+
+/* Dashboard */
+
+.dashboard h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+}
+
+.dashboard-posts {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.buttons {
+  width: 425px;
+  margin: 20px auto;
+}
+
+.buttons button {
+  margin: 0px 5px 0px 5px;
+  width: 200px;
+  height: 50px;
+  background: #ffae00;
+  border: 1px solid #ffae00;
+  border-radius: 3px;
+  font-size: 24px;
+  transition: background 0.3s linear 0s, border 0.3s linear 0s;
+}
+
+.buttons button:hover {
+  background: #cc8c02;
+  border: 1px solid #cc8c02;
+}
+
+.buttons a {
+  color: #151515;
+}
+
+.buttons a:hover {
+  color: #151515;
+}
+
+.edit {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.edit h4 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.edit-sub {
+  width: 100% !important;
+}
+
+/* FA */
+
+.fa-plus {
+  margin-right: 10px;
+}
+
+.fa-user {
+  margin-right: 2px;
+}
+
+.fa-sign-in {
+  margin-right: 2px;
+}
+
+.fa-user-plus {
+  margin-right: 2px;
+}
+
+/* End Dashboard */
+
+/* Input Fields */
+
+/* Create Post */
+
+.form-post {
+  width: 80%;
+  margin: 0 auto;
+  float: left;
+}
+
+.form-post label {
+  color: #151515;
+}
+
+.form-post input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 4px 4px 4px 4px;
+  border: 2px solid #ffae00;
+  background: #151515;
+  transition: border 0.3s linear 0s;
+  color: #fff;
+}
+
+.form-post input[type="text"]:hover {
+  border: 2px solid #202020;
+}
+
+.form-post select {
+  width: 100%;
+  height: 40px;
+  padding: 4px 4px 4px 4px;
+  border: 2px solid #ffae00;
+  background: #151515;
+  transition: border 0.3s linear 0s;
+  color: #fff;
+}
+
+.form-post select:hover {
+  cursor: pointer;
+  border: 2px solid #202020;
+}
+
+.form-post textarea {
+  width: 100%;
+  height: 300px;
+  resize: none;
+  padding: 4px 4px 4px 4px;
+  border: 2px solid #ffae00;
+  background: #151515;
+  transition: border 0.3s linear 0s;
+  color: #fff;
+}
+
+.form-post textarea:hover {
+  border: 2px solid #202020;
+}
+
+.form-post input[type="submit"] {
+  color: #ffae00;
+  margin: 15px 0px 10px 0px;
+  width: 100%;
+  height: 45px;
+  border: 2px solid #151515;
+  background: #151515;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: Overwatch;
+  transition: background 0.3s linear 0s, border 0.3s linear 0s;
+}
+
+.form-post input[type="submit"]:hover {
+  background: #151515;
+  border: 2px solid #ffae00;
+}
+
+/* End Create Post */
+
+form {
+  font-family: Montserrat-Regular;
+}
+
+.modal-link {
+  font-family: Montserrat-Regular;
+  text-align: center;
+  color: #fff;
+  transition: color 0.3s linear 0s;
+}
+
+.modal-link:hover {
+  color: #ffae00;
+  text-decoration: none;
+}
+
+label {
+  margin: 5px 0px 5px 0px;
+  font-family: Overwatch;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #ffae00;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 4px 4px 4px 4px;
+  border: 2px solid #fff;
+  background: #fff;
+  transition: border 0.3s linear 0s;
+}
+
+input[type="text"]:hover {
+  border: 2px solid #ffae00;
+}
+
+input[type="password"] {
+  width: 100%;
+  height: 40px;
+  padding: 4px 4px 4px 4px;
+  border: 2px solid #fff;
+  background: #fff;
+  transition: border 0.3s linear 0s;
+}
+
+input[type="password"]:hover {
+  border: 2px solid #ffae00;
+}
+
+input[type="submit"] {
+  margin: 15px 0px 10px 0px;
+  width: 360px;
+  height: 45px;
+  border: 1px solid #fff;
+  background: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: Overwatch;
+  transition: background 0.3s linear 0s, border 0.3s linear 0s;
+}
+
+input[type="submit"]:hover {
+  background: #ffae00;
+  border: 1px solid #ffae00;
+}
+
+/* End Input Fields */
+
+/* Post */
+
+.avatar { /* change when PHP coded */
+  background: url("../images/avatar.png");
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+
+.platform { /* change when PHP coded */
+  background: url("../images/platforms/bnet.png");
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 10px 0px 0px 15px;
+}
+
+.flag { /* change when PHP coded */
+  background: url("../images/flags/usa.png");
+  width: 30px;
+  height: 20px;
+  float: left;
+  margin: 10px 0px 0px 5px;
+}
+
+.level { /* change when PHP coded */
+  background: #2a9fd6;
+  width: 30px;
+  height: 20px;
+  float: right;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #2a9fd6;
+  border-radius: 3px;
+  margin: 10px 5px 0px 0px;
+  letter-spacing: 1px;
+}
+
+.season-rating { /* change when PHP coded */
+  background: #9933cc;
+  width: 40px;
+  height: 20px;
+  float: right;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #9933cc;
+  border-radius: 3px;
+  margin: 10px 15px 0px 0px;
+  letter-spacing: 1px;
+}
+
+.post {
+  background: #151515;
+  margin: 5px 5px 5px 5px;
+  width: 269.5px !important;
+  height: 350px;
+  border: 1px solid #151515;
+  border-radius: 7px;
+  transition: background 0.3s 0s linear, border 0.3s 0s linear;
+}
+
+.post:hover {
+  background: #202020;
+  border: 1px solid #202020;
+}
+
+.post-header {
+  height: 40px;
+  background: #3c3c3c;
+  width: 269.5px;
+  border: 1px solid #3c3c3c;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  margin: -1px 0px 10px -16px;
+}
+
+.post-header p {
+  margin-top: -1px;
+}
+
+.post-content h3 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.post-content p {
+  margin: 0;
+  color: #fff;
+  font-family: Montserrat-Regular;
+  font-size: 12px;
+}
+
+.post-footer {
+  height: 40px;
+  background: #3c3c3c;
+  width: 269.5px;
+  border: 1px solid #3c3c3c;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin: 14px 0px 0px -16px;
+}
+
+.post-footer p {
+  color: #fff;
+  font-size: 20px;
+  margin: 3px 0px 0px 15px;
+}
+
+.comments {
+  margin: -31px 15px 0px 0px;
+}
+
+.comments p {
+  float: right;
+}
+
+.fa-comments-o {
+  color: #fff;
+  float: right;
+  margin: 6px -5px 0px 0px;
+  font-size: 20px !important;
+}
+
+.fa-comments {
+  color: #fff;
+  float: right;
+  margin: 6px -5px 0px 0px;
+  font-size: 20px !important;
+}
+
+/* End Content */
+
+/* Footer */
+
+footer {
+  margin: 30px auto 0px;
+  width: 100%;
+  height: 80px;
+  background: #151515;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.footer-container p {
+  padding-top: 25px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-container ul {
+  margin-top: -39px;
+  float: right;
+}
+
+.footer-container ul li {
+  padding: 5px 5px 5px 5px;
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.footer-container ul li a {
+  color: #fff;
+  transition: color 0.3s linear 0s;
+}
+
+.footer-container ul li a:hover {
+  color: #ffae00;
+  text-decoration: none;
+}
+
+/* Modal */
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 5% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #151515;
+}
+
+.modalDialog > div > h2 {
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    font-family: Overwatch;
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 0px;
+	text-align: center;
+	top: 0px;
+	width: 24px;
+	text-decoration: none;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+	font-weight: bold;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+  transition: background 0.3s linear 0s;
+}
+
+.close:hover { background: #ffae00; }
+
+/* End Modal */
+
+/* Post Preview */
+
+.post-preview {
+  background: #151515;
+  width: 100%;
+  border: 1px solid #151515;
+  border-radius: 7px;
+}
+
+.post-preview-header {
+  height: 50px;
+  background: #3c3c3c;
+  border: 1px solid #3c3c3c;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  margin-top: -2px;
+  margin-left: -1px;
+  width: 544px;
+}
+
+/* End Post Preview */
