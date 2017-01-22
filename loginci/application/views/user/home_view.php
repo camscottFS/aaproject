@@ -5,7 +5,7 @@
       <div class="dashboard-posts">
         <div class="buttons">
           <a href="player/"><button><i class="fa fa-plus" aria-hidden="true"></i>Create LFG Post</button></a>
-          <button><i class="fa fa-plus" aria-hidden="true"></i>Create Team Post</button>
+          <a href="team/"><button><i class="fa fa-plus" aria-hidden="true"></i>Create Team Post</button></a>
         </div>
       </div>
     </div>
