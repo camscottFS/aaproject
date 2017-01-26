@@ -8,8 +8,11 @@ class Login extends CI_Controller {
 		$this->form_validation->set_rules('username','Username','trim|required');
 		$this->form_validation->set_rules('password','Password','trim|required|callback_basisdata_cek');
 		if($this->form_validation->run()==false){
+			$query=$this->db->query('select * from posts');
+			$rows=$query->result();
+			$post_data=array('result'=>$rows);
 			$this->load->view('header');
-			$this->load->view('home');
+			$this->load->view('home',$post_data);
 			$this->load->view('login_view');
 			$this->load->view('footer');
 		} else{

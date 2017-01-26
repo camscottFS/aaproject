@@ -23,8 +23,11 @@ class Welcome extends CI_Controller {
 		if($this->session->userdata('logged_in')){
 			redirect('home', 'refresh');
 		} else {
+			$query=$this->db->query('select * from posts');
+			$rows=$query->result();
+			$post_data=array('result'=>$rows);
 			$this->load->view('header');
-			$this->load->view('home');
+			$this->load->view('home',$post_data);
 			$this->load->view('footer');
 		}
 	}

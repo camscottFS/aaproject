@@ -10,8 +10,11 @@ class Home extends CI_Controller {
 			$data['id'] = $session_data['id'];
 			$data['email'] = $session_data['email'];
 			$data['username'] = $session_data['username'];
+			$query=$this->db->query('select * from posts');
+			$rows=$query->result();
+			$post_data=array('result'=>$rows);
 			$this->load->view('user/header', $data);
-			$this->load->view('user/home_view', $data);
+			$this->load->view('user/home_view', $post_data);
 			$this->load->view('footer', $data);
 		} else{
 			redirect('login', 'refresh');
