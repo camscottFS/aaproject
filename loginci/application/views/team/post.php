@@ -3,7 +3,7 @@
   		<div class="col-md-6">
 				<h2>Create Team Recruitment Post</h2>
 				<form class="form-post" enctype="multipart/form-data" action="" method="POST">
-					<label>User ID</label>
+					<label>Team Name</label>
 					<input ng-model="userid" type="text" required />
 					<label>Platform</label>
 					<br />

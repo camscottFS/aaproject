@@ -57,8 +57,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<a href="<?php echo site_url('home') ?>"><div class="logo"></div></a>
 			<ul>
 				<li><a href="<?php echo site_url('home') ?>">Dashboard</a></li>
-				<li><a href="#">Looking for Group</a></li>
-				<li><a href="#">Team Recruitment</a></li>
+				<li><a href="<?php echo site_url('lfg') ?>">Looking for Group</a></li>
+				<li><a href="<?php echo site_url('lft') ?>">Team Recruitment</a></li>
 			</ul>
 			<div class="user-nav">
 				<span>Welcome <?php echo $username ?></span>

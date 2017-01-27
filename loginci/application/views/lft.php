@@ -1,15 +1,17 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
 <div class="container">
+  <div class="boxed row">
+    <div class="dashboard col-md-12">
+      <h3>Team Recruitment</h3>
+    </div>
+  </div>
   <div class="boxed row">
     <div class="col-md-12">
       <?php foreach($result as $row){
         echo '<a href=' . $row->id . '>';
         echo '<div class="post col-md-3">'; /* post col-md-3 open */
         echo '<div class="post-header">'; /* post-header open */
-        echo '<img src="assets/custom/images/platforms/' . $row->platform . '.png" style="width: 30px; height: 30px; margin: 5px 0px 0px 10px;" />';
-        echo '<img src="assets/custom/images/division/' . $row->division . '.png" style="float: right; width: 30px; height: 30px; margin: 5px 5px 0px 0px;" />';
+        echo '<img src="../assets/custom/images/platforms/' . $row->platform . '.png" style="width: 30px; height: 30px; margin: 5px 0px 0px 10px;" />';
+        echo '<img src="../assets/custom/images/division/' . $row->division . '.png" style="float: right; width: 30px; height: 30px; margin: 5px 5px 0px 0px;" />';
         echo '</div>'; /* post-header close */
         echo '<div class="post-content">'; /* post-content open */
         echo '<h3>' . $row->userid . '</h3>';
